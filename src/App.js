@@ -1,10 +1,17 @@
 
 import './App.css';
-import weatherComponent from './components/weather';
+import WeatherComponent from './components/weather';
+import FormContainer from './components/Form';
 function App() {
+
+  const getWeather=(e)=>{
+    e.preventDefault()
+    console.log("submitted")
+  }
   return (
-    <div className="App">
-    <weatherComponent/>
+    <div className="App"> 
+    <FormContainer submit={getWeather} />
+    <WeatherComponent/>
       
     </div>
   );

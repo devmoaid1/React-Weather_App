@@ -1,6 +1,6 @@
 import React from 'react'
 
-function weatherComponent() {
+function WeatherComponent() {
     return (
         <div>
             hello this is weather Component
@@ -8,4 +8,4 @@ function weatherComponent() {
     )
 }
 
-export default weatherComponent
+export default WeatherComponent
