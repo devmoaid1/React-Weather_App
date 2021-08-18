@@ -1,9 +1,20 @@
 import React from 'react'
 
-function WeatherComponent() {
+function WeatherComponent(props) { 
+
+
+    const weatherDetails=props.state 
+
+
+    console.log(weatherDetails)
     return (
-        <div>
-            hello this is weather Component
+        <div className="weatherDetails">
+           <ui>
+               <div><li>location:</li></div>
+               <li>location:{weatherDetails.temprature}</li>
+               <li>location:</li>
+               <li>location:</li>
+           </ui>
         </div>
     )
 }
